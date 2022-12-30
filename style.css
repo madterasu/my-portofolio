@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: 'VT323', monospace;
+}
+
+.center {
+    margin: auto;
+    width: 95%;
+    border: 3px solid white;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    text-align: justify;
+}
+
+.navbar {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    padding: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
