@@ -6,10 +6,26 @@ body {
 .center {
     margin: auto;
     width: 95%;
-    border: 3px solid white;
+    border: 3px dashed white;
     padding: 10px;
     text-align: center;
     color: white;
+}
+
+.center h1 {
+    font-size: 70px;
+}
+
+@keyframes rgb {
+    0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;}
+}
+
+.center p {
+    font-size: 25px;
 }
 
 p {
@@ -17,7 +33,7 @@ p {
 }
 
 .navbar {
-    font-size: 18px;
+    font-size: 30px;
     text-decoration: none;
     text-align: center;
 }
@@ -30,9 +46,10 @@ ul li{
 .navbar a {
     text-decoration: none;
     color: white;
+    padding: 20px;
 }
 
 .navbar a:hover {
     text-decoration: underline;
-    color: #ff0000;
+    animation: rgb 1s infinite;
 }
