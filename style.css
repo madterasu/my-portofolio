@@ -10,6 +10,7 @@ body {
     padding: 10px;
     text-align: center;
     color: white;
+    animation: rgb-border .1s infinite;
 }
 
 .center h1 {
@@ -17,11 +18,19 @@ body {
 }
 
 @keyframes rgb {
-    0%   {color:red; left:0px; top:0px;}
-    25%  {color:yellow; left:200px; top:0px;}
-    50%  {color:blue; left:200px; top:200px;}
-    75%  {color:green; left:0px; top:200px;}
-    100% {color:red; left:0px; top:0px;}
+    0%   {color:red;}
+    25%  {color:yellow;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
+
+@keyframes rgb-border {
+    0%   {border:red dashed 3px;}
+    25%  {border:yellow dashed 3px;}
+    50%  {border:blue dashed 3px;}
+    75%  {border:green dashed 3px;}
+    100% {border:red dashed 3px;}
 }
 
 .center p {
@@ -51,5 +60,5 @@ ul li{
 
 .navbar a:hover {
     text-decoration: underline;
-    animation: rgb 1s infinite;
+    animation: rgb .1s infinite;
 }
